@@ -1,0 +1,35 @@
+The following is provided by the CSU Systemwide Libraries Office on https://calstate.atlassian.net/wiki/spaces/ULMS/pages/45613087/Course+reserves+migration
+
+If your campus did not originally elect to migrate course reserves through Ex Libris, you can choose to migrate course reserves though the following alternative method.
+
+Data extracts
+In order to migrate your course reserves from Millennium/Sierra to Alma, we will use the information stored in the course records.  Export your course records from Millennium/Sierra using Create Lists.  Search over COURSE records, using the full range for course records.  You don't need to use any additional criteria unless you wish to exclude certain records from your migration to Alma.  
+
+Click on Export Records and export the following fields.
+
+RECORD #(COURSE)
+BEGIN DATE
+END DATE
+CCODE3
+CREATED
+UPDATED
+PROF/TA
+COURSE
+ITEM ID
+NOTE
+If you don't use any of the fields above, you don't need to include them in your export.  If there are any additional course fields that you wish to migrate to Alma, export any of these fields as well.  
+
+Please change the Field delimiter value in the export to the “pipe” character: |.
+
+The second export is a list of item record numbers and their corresponding barcodes.  For the test load, you can export your current items by using Create Lists to export your full range of item records.  You will export only the following fields:
+
+RECORD #(ITEM)
+BARCODE
+You can leave all export options as the default options.  
+
+Course reserve options
+Alma requires that all courses have a start date and end date.  If there are any courses that are missing a BEGIN DATE or an END DATE in your current system, we will need to use a default setting for these courses.  Please provide:
+
+A default BEGIN DATE to be used if the BEGIN DATE in a course record is blank.
+A default END DATE to be used if the END DATE in a course record is blank. 
+Github link
